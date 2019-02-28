@@ -14,7 +14,9 @@
             <li class="sale important">Milk</li>
         </ul>
         <script>
-            var items = document.getElementsByTagName("li");
+            var shopping = document.getElementById("purchases");
+            var items = shopping.getElementsByTagName("li");
+            alert(items.length)
             for (var i=0; i < items.length; i++){
                 alert(typeof items[i]);
             }
